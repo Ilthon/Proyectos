@@ -1,0 +1,514 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.arriba {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 100%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.fondo-blanco {
+    position: absolute;
+    top: 70%; /* Ajusta la posición si es necesario */
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    z-index: -10; /* Mantén el fondo blanco detrás */
+}
+
+
+.nombres {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nombres-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.nombres-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.frase-biblica {
+    text-align: center;
+    margin: 120px auto;
+    width: 80%;
+}
+
+.frase-texto {
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.frase-cita {
+    color: gold;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.frase-cita {
+    color: gold;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.separador-img {
+    display: block;
+    margin: -90px auto;
+}
+
+.nos-casamos {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.fecha {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.boton-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.calendar-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+}
+
+.calendar-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.calendar-button:hover {
+    background-color: #d4af37;
+}
+
+.invitacion-container {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.invitacion-img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.invitacion-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.invitacion-mensaje {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -170%);
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    width: 80%;
+}
+
+.padre-container {
+    margin-top: 160px;
+    text-align: center;
+}
+
+.padre-container h3 {
+    color: gold;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.padre-container p {
+    font-size: 18px;
+    color: black;
+    margin: 5px 0;
+}
+
+.padre-container .icono {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.ceremonia-recepcion {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.separador-img2 {
+    display: block;
+    margin: 20px auto;
+}
+
+.separador-img3 {
+    display: block;
+    margin: 50px auto;
+}
+
+.circulo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%; 
+}
+
+.circulo-img {
+    position: absolute;
+    width: 450px !important; /* Forzamos el tamaño de la imagen de fondo */
+    height: 400px !important; /* Forzamos el tamaño de la imagen de fondo */
+    object-fit: cover;
+    border-radius: 50%; /* Asegura que la imagen sea circular */
+}
+
+.ceremonia-gif {
+    position: absolute;
+    width: 400px !important; /* Forzamos el tamaño del GIF */
+    height: 400px !important; /* Forzamos el tamaño del GIF */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    border-radius: 50%; /* Asegura que el GIF sea circular */
+}
+
+.ubicacion {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.ubicacion p {
+    font-size: 18px;
+    color: black;
+    margin: 5px 0;
+}
+
+.ubicacion p strong {
+    font-weight: bold;
+}
+
+.circulo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 250px; /* Aumenté el tamaño del contenedor */
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pareja-img {
+    position: absolute;
+    width: 160%;
+    height: 160%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1; /* Imagen de pareja en el fondo */
+}
+
+.circulo-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Círculo encima */
+}
+
+.historia {
+    margin-top: -30px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    white-space: pre-line; /* Esto hace que respete los saltos de línea */
+}
+
+.regalo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.regalo-circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.regalo-img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+}
+
+.regalo-texto {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    width: 80%;
+}
+
+.no-ninos {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.no-ninos-texto {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+.niños-img {
+    display: block;
+    margin: 40px auto;
+}
+
+.codigo-vestimenta {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.codigo-vestimenta-img {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 145px; /* Ajusta este valor según el tamaño de niños.png */
+}
+
+.codigo-vestimenta-texto {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.separador-img4 {
+    display: block;
+    margin: 40px auto;
+}
+
+
+.buenos-deseos-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.buenos-deseos-titulo {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buenos-deseos-texto {
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+}
+
+.buenos-deseos-boton {
+    background-color: gold;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.buenos-deseos-boton:hover {
+    background-color: #d4af37;
+}
+
+.mensaje-final {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gracias-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.gracias-titulo {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.gracias-img {
+    display: flex;
+    margin: -80px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.carta-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.sobre-arriba, .sobre-abajo {
+    position: absolute; /* Permite moverlas libremente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar bien */
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+    transition: transform 1s ease-in-out;
+}
+
+.sobre-arriba {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transform-origin: bottom;
+    
+}
+
+.sobre-abajo {
+    bottom: 50%;
+    left: 0;
+    transform: translateY(50%);
+    transform-origin: top;
+}
